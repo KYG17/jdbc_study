@@ -1,6 +1,5 @@
 package com.gn.study.run;
 
-import com.gn.study.model.vo.Member;
 import com.gn.study.view.MemberMenu;
 
 public class Run {

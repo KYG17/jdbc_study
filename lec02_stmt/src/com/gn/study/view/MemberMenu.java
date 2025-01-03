@@ -40,6 +40,16 @@ public class MemberMenu {
 		System.out.println("===회원 전체 조회===");
 		
 		List<Member>list = mc.selectMemberAll();
+		if(list.isEmpty()) {
+			System.out.println("조회된 결과가 없습니다");
+		}else {
+//			for(int i = 0 ; i < list.size() ; i++) {
+//				System.out.println(list.get(i));
+//			}
+			for(Member l : list) {
+				System.out.println(l);
+			}
+		}
 		//(1)만약에 list가 비어있다면 -> 조회된 결과가 없습니다
 		//(2)member 목록 출력
 	}
