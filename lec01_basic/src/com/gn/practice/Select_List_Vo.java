@@ -43,8 +43,8 @@ public class Select_List_Vo {
 		if(list.isEmpty()) {
 			System.out.println("조회된 결과가 없습니다");
 		}else {
-			for(int i = 0 ; i < list.size() ; i++){
-				System.out.println(list.get(i));
+			for(Test a : list ){
+				System.out.println(a);
 			}
 		}
 			

@@ -16,6 +16,28 @@ public class Member {
 	
 	public Member() {}
 	
+	public Member(String memberId, String memberPw) {
+		this.memberId = memberId;
+		this.memeberPw = memberPw;
+	}
+	
+	public Member(String memberName , String memberPhone , String memberEmail) {
+		this.memberName = memberName;
+		this.memberPhone = memberPhone;
+		this.memberEmail = memberEmail;
+		
+	}
+	
+	public Member(int memberNo ,String memberId, String memberPw) {
+		this.memberNo = memberNo;
+		this.memberId = memberId;
+		this.memeberPw = memberPw;
+		this.regDate = LocalDateTime.now();
+		this.modDate = LocalDateTime.now();
+		
+	}
+	
+	
 	public Member(String memberId, String memeberPw, String memberName, String memberEmail,
 			String memberPhone, String memberGender) {
 		this.memberId = memberId;
