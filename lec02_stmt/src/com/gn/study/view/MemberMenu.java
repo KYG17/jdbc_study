@@ -40,8 +40,6 @@ public class MemberMenu {
 		}	
 	}
 	
-
-	
 	public void updateMember() {
 		// 관리자 -> 모든 회원 정보 수정
 		// 사용자 -> 내것만 수정
