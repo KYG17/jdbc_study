@@ -1,8 +1,8 @@
 package com.gn.homework.model.dao;
 
 import java.sql.Connection;
-import java.sql.Statement;
 import java.sql.DriverManager;
+import java.sql.Statement;
 
 import com.gn.homework.model.vo.Music;
 
@@ -18,7 +18,7 @@ public class MusicDao {
 			String pw = "tiger";
 			conn = DriverManager.getConnection(url,id,pw);
 			stmt = conn.createStatement();
-			String sql = "INSERT INTO wm_user(user_id ,user_pw ,user_name) " 
+			String sql = "INSERT INTO wm_user(wm_id ,wm_pw ,wm_name) " 
 					+ "VALUES('"+mm.getUserId()+"' ,'"+mm.getUserPw()+"','"+mm.getUserName()+"')";
 			result = stmt.executeUpdate(sql);
 		}catch(Exception e){
