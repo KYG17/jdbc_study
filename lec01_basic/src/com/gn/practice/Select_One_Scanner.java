@@ -31,7 +31,7 @@ public class Select_One_Scanner {
 			//(5)Statement 객체생성
 			stmt = conn.createStatement();
 			//(6)결과 전달받기(ResultSet)
-			String sql = "SELECT t_no ,t_name ,t_date" 
+			String sql = "SELECT t_no ,t_name ,t_date " 
 					+ " FROM test"
 					+ " WHERE t_no = " + a;
 					
@@ -44,8 +44,7 @@ public class Select_One_Scanner {
 				t.setTestName(rs.getString("t_name"));
 				t.setTestDate(rs.getTimestamp("t_date").toLocalDateTime());
 				
-			}
-			
+			}	
 			System.out.println(t);
 			
 		}catch(Exception e){
