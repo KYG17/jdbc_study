@@ -55,6 +55,7 @@ public class Dao {
 				Car car = new Car ();
 				car.setCarNo(rs.getInt("car_No"));
 				car.setCarModel(rs.getString("car_model"));
+				car.setCarPrice(rs.getInt("car_price"));
 				car.setCarNo(rs.getInt("car_no"));	
 				if(rs.getDate("car_date")!= null) {
 					car.setCarDate(sdf.format(rs.getDate("car_date")));
