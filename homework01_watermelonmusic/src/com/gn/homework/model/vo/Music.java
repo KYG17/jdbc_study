@@ -14,6 +14,10 @@ public class Music {
 	
 	public Music() {}
 	
+	public Music(String userId) {
+		this.userId = userId;
+	}
+	
 	public Music(String userId , String userPw , String userName) {
 		this.userId = userId;
 		this.userPw = userPw;
